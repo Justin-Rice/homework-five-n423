@@ -1,16 +1,16 @@
 var _db;
 
 function initFirebase(){
-    firebase.auth().signInAnonymously()
-  .then(() => {
-    _db = firebase.firestore();
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    _db = "";
-  });
-   // _db =firebase.firestore();
+//     firebase.auth().signInAnonymously()
+//   .then(() => {
+//     _db = firebase.firestore();
+//   })
+//   .catch((error) => {
+//     var errorCode = error.code;
+//     var errorMessage = error.message;
+//     _db = "";
+//   });
+   _db =firebase.firestore();
 
 
 }
